@@ -16,6 +16,8 @@ import web3 from "../public/ExpenseTrackerApp.png";
 import web2 from "../public/CatImage.png";
 import { useState } from "react";
 import react from "react";
+import stock1 from "../public/stockboard1.png";
+import stock2 from "../public/stockboard2.png";
 
 function Home() {
   const [darkMode, setDarkMode] = useState(false);
@@ -201,6 +203,30 @@ function Home() {
               </h3>
               <Image
                 src={web3}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <h3 className="pb-5 text-xl dark:text-gray-400">
+                Stock Dashboard
+              </h3>
+              <Image
+                src={stock1}
+                className="rounded-lg object-cover"
+                width={"100%"}
+                height={"100%"}
+                layout="responsive"
+              />
+            </div>
+            <div className="basis-1/3 flex-1">
+              <h3 className="pb-5 text-xl dark:text-gray-400">
+                Stock Dashboard
+              </h3>
+              <Image
+                src={stock2}
                 className="rounded-lg object-cover"
                 width={"100%"}
                 height={"100%"}
