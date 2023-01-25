@@ -58,7 +58,7 @@ function Home() {
             <p className="p-2 text-lg leading-8 md:text-xl max-w-lg mx-auto dark:text-gray-400">
               Freelancer specializing in React based projects. Has done a full
               website for the Greentree HOA based in Irvine, CA. Other react
-              projects includes a stock prices watchlist.
+              projects include a stock prices watchlist.
             </p>
             <div className="flex justify-center gap-10 text-5xl py-2 text-gray-600">
               <a href="https://www.facebook.com/ShivaChemburkar/">
@@ -82,9 +82,9 @@ function Home() {
             <h3 className="text-3xl dark:text-gray-300">Services</h3>
             <p className="md:text-lg py-2 leading-7 dark:text-gray-300">
               Since the start of my journey as a freelance Front End Developer,
-              I have completed projects through the mentorship of NiceWrk LLC. I
+              I have completed projects with the mentorship of NiceWrk LLC. I
               have worked on collaborative projects along with individual work
-              to expand by skillset as a developer. My goal is to provide{" "}
+              to expand my skillset as a developer. My goal is to provide{" "}
               <span className="font-semibold text-cyan-600">
                 mobile application
               </span>{" "}
@@ -94,8 +94,8 @@ function Home() {
               rate.
             </p>
             <p className="pb-8 md:text-lg py-2 leading-7 dark:text-gray-300">
-              I offer a range of services including writing the code for designs
-              you may already have in mind, or starting from scratch and
+              I offer a range of services which include writing the code for
+              designs you may already have in mind, or starting from scratch and
               creating products you would like to have.
             </p>
           </div>
@@ -114,7 +114,7 @@ function Home() {
                 Photoshop
               </p>
               <p className="text-md py-1 leading-8 dark:text-gray-400">
-                Illustrator
+                Adobe Illustrator
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-300 dark:bg-slate-700">
@@ -131,10 +131,10 @@ function Home() {
                 ReactJS+NextJS+TailwindCSS
               </p>
               <p className="text-md py-1 leading-8 dark:text-gray-400">
-                Git+GitHub
+                Git+GitHub+NodeJS
               </p>
               <p className="text-md py-1 leading-8 dark:text-gray-400">
-                VS Code+Netlify
+                VS Code+Vercel+Amplify
               </p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-300 dark:bg-slate-700">
@@ -147,7 +147,7 @@ function Home() {
                 understand what it takes to meet client needs within given
                 deadlines.
               </p>
-              <h4 className="py-4 font-medium text-cyan-600">Soft SKills</h4>
+              <h4 className="py-4 font-medium text-cyan-600">Soft Skills</h4>
               <p className="text-md py-1 leading-8 dark:text-gray-400">
                 Flexible
               </p>
@@ -164,7 +164,7 @@ function Home() {
           <div>
             <h3 className="text-3xl py-1 dark:text-gray-400">Portfolio</h3>
             <p className="dark:text-gray-400">
-              Screen grab of example projects.
+              Screenshots of deployed projects.
             </p>
           </div>
 
