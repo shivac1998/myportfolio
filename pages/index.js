@@ -2,7 +2,7 @@ import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillLinkedin, AiFillGithub, AiFillFacebook } from "react-icons/ai";
 import Image from "next/image";
-import shivy from "../public/headshotzoomed.png";
+import shivy from "../public/HeadshotZoomed.png";
 import code from "../public/code.png";
 import consulting from "../public/earth-icon.png";
 import design from "../public/design.png";
@@ -10,6 +10,7 @@ import web1 from "../public/web1.png";
 import web3 from "../public/ExpenseTrackerApp.png";
 import web2 from "../public/CatImage.png";
 import { useState } from "react";
+import Link from "next/link";
 
 import stock1 from "../public/stockboard1.png";
 import stock2 from "../public/stockboard2.png";
@@ -28,7 +29,7 @@ function Home() {
         <section className="min-h-screen">
           <nav className="p-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons flex text-center dark:text-gray-300">
-              developed by shiva
+              Produced by Shiva
             </h1>
             <ul className="flex items-center">
               <li>
@@ -54,10 +55,10 @@ function Home() {
             <h3 className="p-5 text-2xl md:text-3xl dark:text-gray-400">
               Front End Web Developer
             </h3>
-            <p className="p-2 text-md leading-8 md:text-xl max-w-lg mx-auto dark:text-gray-400">
+            <p className="p-2 text-lg leading-8 md:text-xl max-w-lg mx-auto dark:text-gray-400">
               Freelancer specializing in React based projects. Has done a full
               website for the Greentree HOA based in Irvine, CA. Other react
-              projects include a random image generator and an expense tracker.
+              projects includes a stock prices watchlist.
             </p>
             <div className="flex justify-center gap-10 text-5xl py-2 text-gray-600">
               <a href="https://www.facebook.com/ShivaChemburkar/">
@@ -71,7 +72,7 @@ function Home() {
               </a>
             </div>
           </div>
-          <div className="relative mx-auto overflow-hidden rounded-full w-90 h-90 mt-20">
+          <div className="relative mx-60 overflow-hidden rounded-full w-100 h-90 mt-20 object-fill">
             <Image src={shivy} objectFit="cover" alt="" />
           </div>
         </section>
@@ -79,11 +80,11 @@ function Home() {
         <section>
           <div>
             <h3 className="text-3xl dark:text-gray-300">Services</h3>
-            <p className="text-md py-2 leading-8 dark:text-gray-300">
+            <p className="md:text-lg py-2 leading-7 dark:text-gray-300">
               Since the start of my journey as a freelance Front End Developer,
-              I have taken on many projects through NiceWrk LLC. I have worked
-              on collaborative projects along with individual work. My goal is
-              to provide{" "}
+              I have completed projects through the mentorship of NiceWrk LLC. I
+              have worked on collaborative projects along with individual work
+              to expand by skillset as a developer. My goal is to provide{" "}
               <span className="font-semibold text-cyan-600">
                 mobile application
               </span>{" "}
@@ -92,14 +93,14 @@ function Home() {
               <span className="font-semibold text-cyan-600">affordable</span>{" "}
               rate.
             </p>
-            <p className="pb-8 dark:text-gray-300">
+            <p className="pb-8 md:text-lg py-2 leading-7 dark:text-gray-300">
               I offer a range of services including writing the code for designs
               you may already have in mind, or starting from scratch and
               creating products you would like to have.
             </p>
           </div>
-          <div className="lg:flex gap-10">
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-700">
+          <div className="xl:flex gap-10">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-300 dark:bg-slate-700">
               <Image src={design} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-black dark:font-medium">
                 Designs
@@ -116,7 +117,7 @@ function Home() {
                 Illustrator
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-700">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-300 dark:bg-slate-700">
               <Image src={code} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-black">
                 Hand-crafted beauty
@@ -136,7 +137,7 @@ function Home() {
                 VS Code+Netlify
               </p>
             </div>
-            <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-slate-700">
+            <div className="text-center shadow-lg p-10 rounded-xl my-10 bg-slate-300 dark:bg-slate-700">
               <Image src={consulting} width={100} height={100} alt="" />
               <h3 className="text-lg font-medium pt-8 pb-2 dark:text-black">
                 Original
@@ -167,71 +168,49 @@ function Home() {
             </p>
           </div>
 
-          <div className="flex flex-col gap-10 col-2 py-10 lg:flex-row  ">
+          <div className="flex flex-col gap-10 xl:col-2 lg:pb-5 pt-10 lg:flex-row  ">
             <div className="basis-1/3 flex-1">
-              <h3 className="pb-5 text-xl dark:text-gray-400">
+              <h3 className="pb-5 text-xl xl:text-2xl dark:text-gray-400">
                 Greentree Homes
               </h3>
-              <Image
-                src={web1}
-                className="rounded-lg object-fit"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                alt=""
-              />
+              <Link href="https://www.greentreehomesirvine.org/">
+                <Image
+                  src={web1}
+                  className="rounded-lg object-contain cursor-pointer"
+                  width={"100%"}
+                  height={"50%"}
+                  layout="responsive"
+                  alt=""
+                />
+              </Link>
             </div>
-            <div className="basis-1/3 flex-1">
-              <h3 className="pb-5 text-xl dark:text-gray-400">
-                Random Image Generator
-              </h3>
-              <Image
-                src={web2}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                alt=""
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
+            {/* <div className="basis-1/3 flex-1">
               <h3 className="pb-5 text-xl dark:text-gray-400">
                 Expense Tracker
               </h3>
               <Image
                 src={web3}
                 className="rounded-lg object-cover"
-                width={"100%"}
+                width={"85%"}
                 height={"100%"}
                 layout="responsive"
                 alt=""
               />
-            </div>
+            </div> */}
             <div className="basis-1/3 flex-1">
-              <h3 className="pb-5 text-xl dark:text-gray-400">
+              <h3 className="pb-5 text-xl xl:text-2xl dark:text-gray-400">
                 Stock Dashboard
               </h3>
-              <Image
-                src={stock1}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                alt=""
-              />
-            </div>
-            <div className="basis-1/3 flex-1">
-              <h3 className="pb-5 text-xl dark:text-gray-400">
-                Stock Dashboard
-              </h3>
-              <Image
-                src={stock2}
-                className="rounded-lg object-cover"
-                width={"100%"}
-                height={"100%"}
-                layout="responsive"
-                alt=""
-              />
+              <Link href="https://master.d4gla9n1k7647.amplifyapp.com/">
+                <Image
+                  src={stock1}
+                  className="rounded-lg object-scale-down cursor-pointer"
+                  width={"100%"}
+                  height={"50%"}
+                  layout="responsive"
+                  alt=""
+                />
+              </Link>
             </div>
           </div>
         </section>
