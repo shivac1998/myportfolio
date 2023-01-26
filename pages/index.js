@@ -173,7 +173,7 @@ function Home() {
               <h3 className="pb-5 text-xl xl:text-2xl dark:text-gray-400">
                 Greentree Homes
               </h3>
-              <Link href="https://www.greentreehomesirvine.org/">
+              <Link href="https://www.greentreeirvinehomes.com/">
                 <Image
                   src={web1}
                   className="rounded-lg object-contain cursor-pointer"
