@@ -57,7 +57,7 @@ function Home() {
             </h3>
             <p className="p-2 text-lg leading-8 md:text-xl max-w-lg mx-auto dark:text-gray-400">
               Freelancer specializing in React based projects. Has done a full
-              website for the Greentree HOA based in Irvine, CA. Other react
+              website for the Greentree HOA based in Irvine, CA. Other React
               projects include a stock prices watchlist.
             </p>
             <div className="flex justify-center gap-10 text-5xl py-2 text-gray-600">
